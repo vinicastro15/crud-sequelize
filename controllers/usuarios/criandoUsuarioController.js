@@ -13,4 +13,4 @@ const criandoUsuarioController = async(req,res) => {
     return res.status(201).json({user: newuser});
 }
 
-module.exports = criandoUsuarioController
+module.exports = criandoUsuarioController;

@@ -4,4 +4,4 @@ const pegandoUsuarioController = async (req,res)=>{
     return res.status(200).json({usuarios: usuarios})
 }
 
-module.exports = pegandoUsuarioController
+module.exports = pegandoUsuarioController;

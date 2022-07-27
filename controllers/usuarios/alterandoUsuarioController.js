@@ -11,4 +11,4 @@ const alterandoUsuarioController = async (req,res)=>{
     return res.json({usuario: usuarioAtualizado});
 }
 
-module.exports = alterandoUsuarioController
+module.exports = alterandoUsuarioController;

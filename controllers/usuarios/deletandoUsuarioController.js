@@ -10,4 +10,4 @@ const deletandoUsuarioController = async (req, res) => {
     return res.json({ mensagem: "Usuario deletado com sucesso!", usuario: pessoa });
 }
 
-module.exports = deletandoUsuarioController
+module.exports = deletandoUsuarioController;
