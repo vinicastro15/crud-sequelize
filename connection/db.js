@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 
-if(process.env.ENVIRONMENT === "Systemcar_staging"){
+if(process.env.ENVIRONMENT === "systemcar_staging"){
     const sequelize = new Sequelize(
         process.env.DATABASE_NAME,
         process.env.DATABASE_USERNAME,

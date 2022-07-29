@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../connection/db');
 
-const usuario = db.define('teste' , {
+const usuario = db.define('pessoa' , {
     id :{
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false, 
@@ -12,7 +12,15 @@ const usuario = db.define('teste' , {
         type: Sequelize.DataTypes.STRING,
         allowNull: false, 
     },
+    datanasc :{
+        type : Sequelize.DataTypes.DATE,
+        allowNull: false,
+    },
     email :{
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false, 
+    },
+    rg : {
         type: Sequelize.DataTypes.STRING,
         allowNull: false, 
     },

@@ -4,10 +4,10 @@ const criandoUsuarioController = async(req,res) => {
     const user = require('../../models/usuario');
     //verifica se existe essa tabela no banco caso nao exista ele cria
     await db.sync()
-    const {nome , email } = req.body
+    const {nome, datanasc,email,rg } = req.body
     //desestruturacão
     const newuser = await user.create({
-        nome , email 
+        nome , datanasc, email, rg 
     });
     console.log(newuser)
     return res.status(201).json({user: newuser});
